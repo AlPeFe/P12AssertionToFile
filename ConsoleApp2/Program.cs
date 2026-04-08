@@ -3,9 +3,9 @@ using System.Security.Cryptography.Xml;
 using System.Text;
 using System.Xml;
 
-string p12Path = @"c:\temp\p12.p12";
+string p12Path = @"c:\temp\p12tsb.p12";
 string outputPath = @"c:\temp\assertion.txt";
-string p12Password = "pwd";  // Cambia aquí la contraseña si el .p12 la tiene
+string p12Password = "Osoft2010*+";  // Cambia aquí la contraseña si el .p12 la tiene
 
 Console.WriteLine("Cargando certificado...");
 var cert = new X509Certificate2(p12Path, p12Password, X509KeyStorageFlags.Exportable);
